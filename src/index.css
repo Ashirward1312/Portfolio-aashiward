@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+/* Default Tailwind import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-sans: "Poppins", sans-serif;
+  --font-display: "Syne", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+}
+
+/* Custom scrollbar and premium utility styles */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030304;
+}
+::-webkit-scrollbar-thumb {
+  background: #11111a;
+  border-radius: 10px;
+  border: 1px solid #030304;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #22d3ee/30;
+}
+
+body {
+  background-color: #000000;
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  cursor: none !important;
+}
+
+/* Hide default cursor globally for premium neon interaction */
+* {
+  cursor: none !important;
+}
+
+/* Custom keyframes for premium motion */
+@keyframes ufo-glow {
+  0% {
+    transform: translate(10%, -10%);
+    filter: drop-shadow(0 0 20px rgba(34,211,238,0.3));
+  }
+  25% {
+    transform: translate(80%, 20%);
+    filter: drop-shadow(0 0 30px rgba(59,130,246,0.4));
+  }
+  50% {
+    transform: translate(70%, 80%);
+    filter: drop-shadow(0 0 25px rgba(168,85,247,0.3));
+  }
+  75% {
+    transform: translate(15%, 60%);
+    filter: drop-shadow(0 0 35px rgba(34,211,238,0.5));
+  }
+  100% {
+    transform: translate(10%, -10%);
+    filter: drop-shadow(0 0 20px rgba(34,211,238,0.3));
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px rgba(34, 211, 238, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 25px rgba(34, 211, 238, 0.7));
+  }
+}
+
+.animate-ufo-glow {
+  animation: ufo-glow 25s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* Glassmorphism custom classes */
+.glass-panel {
+  background: rgba(6, 6, 9, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(10, 10, 18, 0.6);
+  border-color: rgba(34, 211, 238, 0.3);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 30px -10px rgba(34, 211, 238, 0.25);
+  transform: translateY(-5px);
+}
+
+/* Heading and Paragraph font classes */
+.heading-font {
+  font-family: var(--font-display);
+}
+
+.paragraph-font {
+  font-family: var(--font-sans);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.animate-scan {
+  animation: scan 3s linear infinite;
+}
+
+.animate-spin-slow {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.animate-scan {
+  animation: scan 3s linear infinite;
+}
