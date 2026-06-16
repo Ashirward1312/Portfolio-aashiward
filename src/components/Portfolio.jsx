@@ -118,6 +118,33 @@ const PROJECTS = [
     icon: Terminal,
     tone: "cyan",
     stack: ["React.js", "Vite", "Tailwind CSS"]
+  },
+  {
+    id: 11,
+    name: "Laafi Foods",
+    host: "laafifoods.com",
+    desc: "E-commerce platform for food products with seamless ordering and delivery management.",
+    url: "https://www.laafifoods.com/",
+    icon: Layout,
+    tone: "purple",
+     stack: [
+    "Shopify",
+    "Liquid",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "E-commerce"
+  ]
+  },
+  {
+    id: 12,
+    name: "Sambhav Sansthan",
+    host: "sambhavsansthan.org",
+    desc: "NGO website showcasing social initiatives, events, and community development programs.",
+    url: "https://sambhavsansthan.org/",
+    icon: Globe,
+    tone: "blue",
+    stack: ["React.js", "Web", "Tailwind CSS"]
   }
 ];
 

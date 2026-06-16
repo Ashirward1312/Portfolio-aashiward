@@ -1,8 +1,8 @@
 // src/Components/ExperiencePage.jsx
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { 
-  Briefcase, 
+import {
+  Briefcase,
   Calendar,
   MapPin,
   ChevronRight,
@@ -25,11 +25,10 @@ import {
 
 const ChamferCard = ({ className = "", children, isActive = false }) => (
   <div
-    className={`relative border transition-all duration-500 overflow-hidden group/card ${
-      isActive 
-        ? "border-cyan-300/50 bg-gradient-to-br from-slate-900/90 to-slate-950/90 shadow-[0_0_35px_rgba(34,211,238,0.2)]" 
+    className={`relative border transition-all duration-500 overflow-hidden group/card ${isActive
+        ? "border-cyan-300/50 bg-gradient-to-br from-slate-900/90 to-slate-950/90 shadow-[0_0_35px_rgba(34,211,238,0.2)]"
         : "border-cyan-400/20 bg-gradient-to-b from-slate-950/70 to-black/70 shadow-[0_0_20px_rgba(34,211,238,0.1)] hover:border-cyan-300/40"
-    } ${className}`}
+      } ${className}`}
     style={{
       clipPath: "polygon(0 12px, 12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px))",
     }}
@@ -84,7 +83,7 @@ const experiences = [
     location: "Remote",
     description: "Delivering end-to-end web solutions for clients across multiple industries with focus on modern technologies and scalable architecture.",
     highlights: [
-      "Delivered 15+ production websites for clients across branding, news, logistics, and professional services",
+      "Delivered 10+ production websites for clients across branding, news, logistics, and professional services",
       "Built custom backends, REST APIs, and admin dashboards using Python, Django, and React.js",
       "Deployed on Hostinger, BigRock, and AWS S3 with complete CI/CD setup",
       "Managed full project lifecycle — client requirements, system design, development, SEO, and post-launch support"
@@ -93,7 +92,7 @@ const experiences = [
     icon: Rocket,
     color: "purple"
   },
-  
+
   {
     id: "yashvitech-intern",
     role: "Full-Stack Developer Intern",
@@ -132,7 +131,7 @@ const StatsCard = ({ icon: Icon, value, label, delay = 0 }) => (
     }}
   >
     <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/0 via-cyan-400/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-    
+
     <div className="relative z-10 flex items-center gap-3">
       <div className="p-2 bg-cyan-500/10 border border-cyan-400/30 rounded-lg">
         <Icon size={20} className="text-cyan-400" />
@@ -155,7 +154,7 @@ const ExperiencePage = () => {
   const stats = [
     { icon: Briefcase, value: "15+", label: "Projects Delivered" },
     { icon: Calendar, value: "1.5+", label: "Years Experience" },
-    { icon: Award, value: "4", label: "Key Positions" },
+    { icon: Award, value: "3", label: "Key Positions" },
     { icon: TrendingUp, value: "100%", label: "Client Satisfaction" }
   ];
 
@@ -175,7 +174,7 @@ const ExperiencePage = () => {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-6 w-full space-y-16">
-        
+
         {/* ═══════════════ HEADER ═══════════════ */}
         <div className="text-center space-y-4">
           <motion.div
@@ -255,13 +254,12 @@ const ExperiencePage = () => {
                   >
                     {/* Timeline Dot */}
                     <div className="absolute left-0 md:left-6 top-6 -translate-x-1/2 z-10">
-                      <div className={`w-4 h-4 rounded-full border-4 transition-all duration-300 ${
-                        isCurrent 
-                          ? 'bg-cyan-400 border-cyan-300 shadow-[0_0_15px_rgba(34,211,238,0.6)] animate-pulse' 
+                      <div className={`w-4 h-4 rounded-full border-4 transition-all duration-300 ${isCurrent
+                          ? 'bg-cyan-400 border-cyan-300 shadow-[0_0_15px_rgba(34,211,238,0.6)] animate-pulse'
                           : isActive
-                          ? 'bg-purple-400 border-purple-300 shadow-[0_0_12px_rgba(168,85,247,0.4)]'
-                          : 'bg-slate-700 border-slate-600'
-                      }`} />
+                            ? 'bg-purple-400 border-purple-300 shadow-[0_0_12px_rgba(168,85,247,0.4)]'
+                            : 'bg-slate-700 border-slate-600'
+                        }`} />
                     </div>
 
                     <div className="ml-0 md:ml-16">
@@ -273,12 +271,11 @@ const ExperiencePage = () => {
                           <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-4">
                             <div className="flex-1 space-y-3">
                               <div className="flex items-start gap-3">
-                                <div 
-                                  className={`p-3 border-2 transition-all duration-300 ${
-                                    isActive || isCurrent
+                                <div
+                                  className={`p-3 border-2 transition-all duration-300 ${isActive || isCurrent
                                       ? 'border-cyan-400/60 bg-gradient-to-br from-cyan-500/20 to-purple-500/10 text-cyan-300 shadow-[0_0_20px_rgba(34,211,238,0.3)]'
                                       : 'border-white/10 bg-white/5 text-white/50 group-hover/card:border-cyan-400/30'
-                                  }`}
+                                    }`}
                                   style={{
                                     clipPath: "polygon(0 6px, 6px 0, calc(100% - 6px) 0, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0 calc(100% - 6px))"
                                   }}
@@ -288,9 +285,8 @@ const ExperiencePage = () => {
 
                                 <div className="flex-1">
                                   <div className="flex items-center gap-2 mb-1.5">
-                                    <h4 className={`text-lg md:text-xl font-black uppercase tracking-wider transition-colors ${
-                                      isActive || isCurrent ? 'text-white' : 'text-slate-400 group-hover/card:text-slate-300'
-                                    }`}>
+                                    <h4 className={`text-lg md:text-xl font-black uppercase tracking-wider transition-colors ${isActive || isCurrent ? 'text-white' : 'text-slate-400 group-hover/card:text-slate-300'
+                                      }`}>
                                       {exp.role}
                                     </h4>
                                     {isCurrent && (

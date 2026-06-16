@@ -102,8 +102,6 @@ const services = [
       { name: "Django", icon: "https://cdn.simpleicons.org/django/092E20" },
       { name: "Django REST", icon: "https://cdn.simpleicons.org/django/092E20" },
       { name: "Python", icon: "https://cdn.simpleicons.org/python/3776AB" },
-      { name: "PHP", icon: "https://cdn.simpleicons.org/php/777BB4" },
-      { name: "PostgreSQL", icon: "https://cdn.simpleicons.org/postgresql/4169E1" },
       { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql/4479A1" }
     ]
   },
@@ -129,7 +127,6 @@ const technicalSkills = {
   "Programming Languages": [
     { name: "Python", icon: "https://cdn.simpleicons.org/python/3776AB" },
     { name: "JavaScript", icon: "https://cdn.simpleicons.org/javascript/F7DF1E" },
-    { name: "PHP", icon: "https://cdn.simpleicons.org/php/777BB4" },
     { name: "SQL", icon: "https://cdn.simpleicons.org/mysql/4479A1" },
     { name: "HTML5", icon: "https://cdn.simpleicons.org/html5/E34F26" },
     { name: "CSS3", icon: "https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo-2011.png" }
@@ -164,7 +161,6 @@ const technicalSkills = {
     { name: "Social Media", icon: "https://cdn.simpleicons.org/meta/0081FB" }
   ],
   "Databases": [
-    { name: "PostgreSQL", icon: "https://cdn.simpleicons.org/postgresql/4169E1" },
     { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql/4479A1" }
   ],
   "Development Tools": [
