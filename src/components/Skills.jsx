@@ -339,7 +339,7 @@ const ServicesPage = () => {
                               <NeonButton 
                                 onClick={() => {
                                   const msg = `Hi! I'm interested in your ${service.title} services.`;
-                                  window.open(`https://wa.me/917470958844?text=${encodeURIComponent(msg)}`, '_blank');
+                                  window.open(`https://wa.me/917987109120?text=${encodeURIComponent(msg)}`, '_blank');
                                 }}
                               >
                                 <MessageCircle size={14} />

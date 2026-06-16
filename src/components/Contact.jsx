@@ -258,7 +258,7 @@ const ContactPage = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    placeholder="John Doe"
+                    placeholder="Ashirwad"
                   />
 
                   <InputField
@@ -269,7 +269,7 @@ const ContactPage = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    placeholder="john@example.com"
+                    placeholder="[EMAIL_ADDRESS]"
                   />
 
                   <InputField
