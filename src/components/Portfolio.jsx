@@ -21,66 +21,16 @@ import {
 const PROJECTS = [
   {
     id: 1,
-    name: "Aarogya Hospital",
-    host: "aarogyahospitalraipur.com",
-    desc: "Complete healthcare solution with appointment booking, patient management, and medical services showcase.",
-    url: "https://aarogyahospitalraipur.com/",
-    icon: Building2,
+    name: "Indie Naari",
+    host: "indienaari.com",
+    desc: "Full-stack e-commerce platform with product catalog management, shopping cart, order processing, and secure payments.",
+    url: "https://indienaari.com",
+    icon: Globe,
     tone: "cyan",
-    stack: ["React.js", "Django", "PostgreSQL"]
+    stack: ["React.js", "Django", "Tailwind CSS"]
   },
   {
     id: 2,
-    name: "SSGT Group",
-    host: "ssgtgroup.com",
-    desc: "Corporate website for construction and real estate with project galleries and inquiry management.",
-    url: "https://ssgtgroup.com/",
-    icon: Layout,
-    tone: "blue",
-    stack: ["React.js", "Vite", "Tailwind CSS"]
-  },
-  {
-    id: 3,
-    name: "SP Advertising",
-    host: "spadvertising.in",
-    desc: "Digital marketing agency platform showcasing services, portfolio, and client testimonials.",
-    url: "https://spadvertising.in/",
-    icon: Rocket,
-    tone: "purple",
-    stack: ["React.js", "Django", "AWS S3"]
-  },
-  {
-    id: 4,
-    name: "Ventoria Global",
-    host: "ventoriaglobal.com",
-    desc: "International business solutions platform with service catalog and global presence showcase.",
-    url: "https://ventoriaglobal.com/",
-    icon: Globe,
-    tone: "cyan",
-    stack: ["React.js", "Node.js", "MongoDB"]
-  },
-  {
-    id: 5,
-    name: "Mahesh Ventures",
-    host: "maheshventures.in",
-    desc: "Real estate and investment platform with property listings and financial services integration.",
-    url: "https://maheshventures.in/",
-    icon: Briefcase,
-    tone: "blue",
-    stack: ["React.js", "Django REST", "PostgreSQL"]
-  },
-  {
-    id: 6,
-    name: "Land Bazar",
-    host: "landbazar.in",
-    desc: "Property marketplace connecting buyers and sellers with advanced search and listing features.",
-    url: "https://landbazar.in/",
-    icon: Terminal,
-    tone: "purple",
-    stack: ["React.js", "Django", "AWS S3"]
-  },
-  {
-    id: 7,
     name: "DDC Consultancy",
     host: "ddcconsultancy.in",
     desc: "HR operations management — employee records, leave tracking, approvals, and payroll integration.",
@@ -90,7 +40,7 @@ const PROJECTS = [
     stack: ["React.js", "Django", "PostgreSQL"]
   },
   {
-    id: 8,
+    id: 3,
     name: "Risevo Platform",
     host: "risevo.in",
     desc: "Developer-client connection platform with profile management and project collaboration tools.",
@@ -100,7 +50,7 @@ const PROJECTS = [
     stack: ["React.js", "Django REST", "AWS S3"]
   },
   {
-    id: 9,
+    id: 4,
     name: "Prajapati Enterprises",
     host: "prajapatienterprises.in",
     desc: "Premium business website with service showcase and conversion-optimized user journeys.",
@@ -110,7 +60,67 @@ const PROJECTS = [
     stack: ["React.js", "Vite", "Tailwind CSS"]
   },
   {
+    id: 5,
+    name: "SP Advertising",
+    host: "spadvertising.in",
+    desc: "Digital marketing agency platform showcasing services, portfolio, and client testimonials.",
+    url: "https://spadvertising.in/",
+    icon: Rocket,
+    tone: "purple",
+    stack: ["React.js", "Django", "AWS S3"]
+  },
+  {
+    id: 6,
+    name: "Aarogya Hospital",
+    host: "aarogyahospitalraipur.com",
+    desc: "Complete healthcare solution with appointment booking, patient management, and medical services showcase.",
+    url: "https://aarogyahospitalraipur.com/",
+    icon: Building2,
+    tone: "cyan",
+    stack: ["React.js", "Django", "PostgreSQL"]
+  },
+  {
+    id: 7,
+    name: "SSGT Group",
+    host: "ssgtgroup.com",
+    desc: "Corporate website for construction and real estate with project galleries and inquiry management.",
+    url: "https://ssgtgroup.com/",
+    icon: Layout,
+    tone: "blue",
+    stack: ["React.js", "Vite", "Tailwind CSS"]
+  },
+  {
+    id: 8,
+    name: "Ventoria Global",
+    host: "ventoriaglobal.com",
+    desc: "International business solutions platform with service catalog and global presence showcase.",
+    url: "https://ventoriaglobal.com/",
+    icon: Globe,
+    tone: "cyan",
+    stack: ["React.js", "Node.js", "MongoDB"]
+  },
+  {
+    id: 9,
+    name: "Mahesh Ventures",
+    host: "maheshventures.in",
+    desc: "Real estate and investment platform with property listings and financial services integration.",
+    url: "https://maheshventures.in/",
+    icon: Briefcase,
+    tone: "blue",
+    stack: ["React.js", "Django REST", "PostgreSQL"]
+  },
+  {
     id: 10,
+    name: "Land Bazar",
+    host: "landbazar.in",
+    desc: "Property marketplace connecting buyers and sellers with advanced search and listing features.",
+    url: "https://landbazar.in/",
+    icon: Terminal,
+    tone: "purple",
+    stack: ["React.js", "Django", "AWS S3"]
+  },
+  {
+    id: 11,
     name: "Ryaan Signage",
     host: "ryaangroup.in",
     desc: "Corporate website for signage solutions featuring neon displays and architectural branding.",
@@ -120,7 +130,7 @@ const PROJECTS = [
     stack: ["React.js", "Vite", "Tailwind CSS"]
   },
   {
-    id: 11,
+    id: 12,
     name: "Laafi Foods",
     host: "laafifoods.com",
     desc: "E-commerce platform for food products with seamless ordering and delivery management.",
@@ -137,7 +147,7 @@ const PROJECTS = [
   ]
   },
   {
-    id: 12,
+    id: 13,
     name: "Sambhav Sansthan",
     host: "sambhavsansthan.org",
     desc: "NGO website showcasing social initiatives, events, and community development programs.",

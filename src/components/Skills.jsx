@@ -1,9 +1,9 @@
 // src/Components/ServicesPage.jsx
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { 
-  Globe, 
-  Smartphone, 
+import {
+  Globe,
+  Smartphone,
   Database,
   Cloud,
   ChevronDown,
@@ -24,11 +24,10 @@ import {
 
 const ChamferCard = ({ className = "", children, isOpen = false }) => (
   <div
-    className={`relative border transition-all duration-500 overflow-hidden group/card ${
-      isOpen 
-        ? "border-cyan-300/50 bg-gradient-to-br from-slate-900/90 to-slate-950/90 shadow-[0_0_35px_rgba(34,211,238,0.2)]" 
+    className={`relative border transition-all duration-500 overflow-hidden group/card ${isOpen
+        ? "border-cyan-300/50 bg-gradient-to-br from-slate-900/90 to-slate-950/90 shadow-[0_0_35px_rgba(34,211,238,0.2)]"
         : "border-cyan-400/20 bg-gradient-to-b from-slate-950/70 to-black/70 shadow-[0_0_20px_rgba(34,211,238,0.1)] hover:border-cyan-300/40"
-    } ${className}`}
+      } ${className}`}
     style={{
       clipPath: "polygon(0 12px, 12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px))",
     }}
@@ -49,7 +48,7 @@ const ChamferCard = ({ className = "", children, isOpen = false }) => (
 );
 
 const NeonButton = ({ onClick, children }) => (
-  <button 
+  <button
     onClick={onClick}
     className="group relative inline-flex items-center justify-center gap-2 border-2 border-cyan-400/40 bg-gradient-to-r from-cyan-500/10 to-purple-500/5 px-6 py-2.5 text-[10px] font-black uppercase tracking-[0.2em] text-cyan-200 hover:bg-cyan-400/20 hover:border-cyan-300 transition-all duration-300 overflow-hidden"
     style={{
@@ -204,7 +203,7 @@ const ServicesPage = () => {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-6 w-full space-y-16">
-        
+
         {/* ═══════════════ HEADER ═══════════════ */}
         <div className="text-center space-y-4">
           <motion.div
@@ -247,7 +246,7 @@ const ServicesPage = () => {
         </div>
 
         {/* ═══════════════ SERVICES ACCORDION ═══════════════ */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -271,12 +270,11 @@ const ServicesPage = () => {
                     className="w-full flex flex-col md:flex-row md:items-center justify-between px-6 py-6 md:px-8 text-left transition-all duration-300"
                   >
                     <div className="flex items-center gap-4">
-                      <div 
-                        className={`p-3 border-2 transition-all duration-300 ${
-                          isOpen 
-                            ? 'border-cyan-400/60 bg-gradient-to-br from-cyan-500/20 to-purple-500/10 text-cyan-300 shadow-[0_0_20px_rgba(34,211,238,0.3)]' 
+                      <div
+                        className={`p-3 border-2 transition-all duration-300 ${isOpen
+                            ? 'border-cyan-400/60 bg-gradient-to-br from-cyan-500/20 to-purple-500/10 text-cyan-300 shadow-[0_0_20px_rgba(34,211,238,0.3)]'
                             : 'border-white/10 bg-white/5 text-white/50 group-hover/card:border-cyan-400/30'
-                        }`}
+                          }`}
                         style={{
                           clipPath: "polygon(0 6px, 6px 0, calc(100% - 6px) 0, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0 calc(100% - 6px))"
                         }}
@@ -284,15 +282,13 @@ const ServicesPage = () => {
                         <Icon size={22} />
                       </div>
                       <div>
-                        <h3 className={`text-lg md:text-xl font-black uppercase tracking-wider transition-all duration-300 ${
-                          isOpen ? 'text-white' : 'text-slate-400 group-hover/card:text-slate-300'
-                        }`}>
+                        <h3 className={`text-lg md:text-xl font-black uppercase tracking-wider transition-all duration-300 ${isOpen ? 'text-white' : 'text-slate-400 group-hover/card:text-slate-300'
+                          }`}>
                           {service.title}
                         </h3>
                         <div className="flex items-center gap-2 mt-1">
-                          <div className={`h-1.5 w-1.5 rounded-full transition-all duration-300 ${
-                            isOpen ? 'bg-cyan-400 animate-ping' : 'bg-slate-600'
-                          }`} />
+                          <div className={`h-1.5 w-1.5 rounded-full transition-all duration-300 ${isOpen ? 'bg-cyan-400 animate-ping' : 'bg-slate-600'
+                            }`} />
                           <p className="text-[9px] font-bold uppercase tracking-wider text-cyan-400/70">
                             {service.id}_SYSTEM {isOpen ? 'ACTIVE' : 'STANDBY'}
                           </p>
@@ -302,9 +298,8 @@ const ServicesPage = () => {
                     <motion.div
                       animate={{ rotate: isOpen ? 180 : 0 }}
                       transition={{ duration: 0.3 }}
-                      className={`mt-4 md:mt-0 transition-colors duration-300 ${
-                        isOpen ? 'text-cyan-400' : 'text-white/20'
-                      }`}
+                      className={`mt-4 md:mt-0 transition-colors duration-300 ${isOpen ? 'text-cyan-400' : 'text-white/20'
+                        }`}
                     >
                       <ChevronDown size={24} strokeWidth={2.5} />
                     </motion.div>
@@ -320,7 +315,7 @@ const ServicesPage = () => {
                       >
                         <div className="px-6 pb-8 md:px-8">
                           <div className="h-[1.5px] w-full bg-gradient-to-r from-cyan-400/30 via-cyan-400/10 to-transparent mb-6" />
-                          
+
                           <div className="grid lg:grid-cols-12 gap-8">
                             <div className="lg:col-span-5 space-y-6">
                               <div>
@@ -336,7 +331,7 @@ const ServicesPage = () => {
                                 </p>
                               </div>
 
-                              <NeonButton 
+                              <NeonButton
                                 onClick={() => {
                                   const msg = `Hi! I'm interested in your ${service.title} services.`;
                                   window.open(`https://wa.me/917987109120?text=${encodeURIComponent(msg)}`, '_blank');
@@ -362,7 +357,7 @@ const ServicesPage = () => {
                                 </p>
                                 <div className="flex-1 h-[1px] bg-gradient-to-r from-cyan-400/30 to-transparent" />
                               </div>
-                              
+
                               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                                 {service.technologies.map((tech, i) => (
                                   <motion.div
@@ -373,16 +368,16 @@ const ServicesPage = () => {
                                     className="group/tech relative border border-white/10 bg-gradient-to-br from-white/[0.03] to-white/[0.01] p-3 flex flex-col items-center text-center transition-all duration-300 hover:bg-white/[0.08] hover:border-cyan-400/40 hover:shadow-[0_0_15px_rgba(34,211,238,0.15)] cursor-pointer"
                                   >
                                     <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/0 via-cyan-400/5 to-transparent opacity-0 group-hover/tech:opacity-100 transition-opacity duration-300" />
-                                    
-                                    <img 
-                                      src={tech.icon} 
-                                      alt={tech.name} 
-                                      className="w-12 h-12 mb-3 object-contain opacity-70 group-hover/tech:opacity-100 group-hover/tech:scale-110 transition-all duration-300 relative z-10" 
+
+                                    <img
+                                      src={tech.icon}
+                                      alt={tech.name}
+                                      className="w-12 h-12 mb-3 object-contain opacity-70 group-hover/tech:opacity-100 group-hover/tech:scale-110 transition-all duration-300 relative z-10"
                                     />
                                     <h5 className="text-[10px] font-black uppercase tracking-wide text-white relative z-10">
                                       {tech.name}
                                     </h5>
-                                    
+
                                     <div className="absolute top-1 right-1 opacity-0 group-hover/tech:opacity-100 transition-opacity duration-300">
                                       <ArrowUpRight size={10} className="text-cyan-400" />
                                     </div>
@@ -442,7 +437,7 @@ const ServicesPage = () => {
                   {category.includes("Tools") && <Cpu size={16} className="text-cyan-400" />}
                   {category.includes("Security") && <Shield size={16} className="text-cyan-400" />}
                   {category.includes("Computer") && <Code2 size={16} className="text-cyan-400" />}
-                  
+
                   <h4 className="text-base md:text-lg font-black uppercase tracking-wider text-white">
                     {category}
                   </h4>
@@ -467,12 +462,12 @@ const ServicesPage = () => {
                       }}
                     >
                       <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/0 via-cyan-400/10 to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-300" />
-                      
+
                       {skill.icon && (
-                        <img 
-                          src={skill.icon} 
-                          alt={skill.name} 
-                          className="w-12 h-12 object-contain opacity-80 group-hover/item:opacity-100 transition-all duration-300 relative z-10 bg-white/5 p-1 rounded drop-shadow-[0_0_10px_rgba(34,211,238,0.2)]" 
+                        <img
+                          src={skill.icon}
+                          alt={skill.name}
+                          className="w-12 h-12 object-contain opacity-80 group-hover/item:opacity-100 transition-all duration-300 relative z-10 bg-white/5 p-1 rounded drop-shadow-[0_0_10px_rgba(34,211,238,0.2)]"
                         />
                       )}
                       <span className="text-[9px] font-bold uppercase text-center text-slate-400 group-hover/item:text-cyan-300 transition-colors duration-300 leading-tight relative z-10">
@@ -489,7 +484,7 @@ const ServicesPage = () => {
         </motion.div>
 
         {/* ═══════════════ FOOTER STATUS ═══════════════ */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
